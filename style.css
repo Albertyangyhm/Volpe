@@ -1,0 +1,494 @@
+/* C to the S to the S */
+
+@font-face {
+  font-family: "HelveticaNeue Light";
+  src: url("HelveticaNeue Light.ttf") format("truetype");
+}
+
+
+html {
+  background: url('../images/lowres.jpg') no-repeat center center fixed;
+  background-color: rgb(188, 227, 218);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: "HelveticaNeue Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+    color: #ffffff;
+    /*font: 15px/24px "Arial", "Anonymous Pro", "Consolas", monospace;
+
+    letter-spacing: -0.01em;*/
+}
+
+h1 {
+  text-align: center;
+  font-size: 20px;
+
+    }
+
+ul.content {
+  margin: auto;
+  font-size: 20px;
+  list-style: none;
+  position: fixed;
+  top: 40%;
+
+}
+
+ul.links {
+  font-size: 20px;
+    list-style: none;
+    position: fixed;
+    left: 5%;
+    top: 59%;
+    width: 45%;
+}
+
+ul li {
+    padding: 10px 0;
+}
+
+#first-line {
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+    border-bottom: 1px dotted #ccc;
+    background: #111;
+    color: #fff;
+    opacity: 0.7;
+}
+
+a:hover {
+  opacity: 1;
+    background: #84a403;
+    color: #fff;
+}
+
+.typing {
+    position: relative;
+    display: inline-block;
+    width: 8px;
+    text-indent: -999em;
+    background: #ccc;
+    -webkit-animation: flick 1s infinite;
+    -moz-animation: flick 1s infinite;
+    -ms-animation: flick 1s infinite;
+    -o-animation: flick 1s infinite;
+    animation: flick 1s infinite;
+}
+
+.section-wrapper {
+
+  color: #011434;
+  position: absolute;
+  left: 50%;
+  right: 10%;
+  top: 10%;
+
+}
+
+@media (max-width: 900px) {
+    body {
+        font-size: 12px;
+        min-height: 530px;
+    }
+
+    ul.content {
+        position: absolute;
+        width: 80vw;
+        top: 20%;
+        left: 10%;
+    }
+
+    ul.links {
+      position: absolute;
+      width: 80vw;
+      top: 40%;
+      left: 10%;
+    }
+
+    .section-wrapper {
+      color: #011434;
+      left: 10%;
+      right: 10%;
+      top: 50%;
+
+    }
+
+}
+
+
+
+
+
+.img-card {
+  border-radius: 15px;
+  height: 450px;
+}
+
+.img-card {
+  transition: transform 0.15s;
+}
+.img-card:hover {
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
+.img-card-text-description, .img-card-text-title, .img-card-item-type {
+  color:#222;
+  font-family: "HelveticaNeue Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+  letter-spacing: -0.5px;
+  line-height: 1.4rem;
+}
+
+/*
+.page-gap, .footer-flex, hr.f, #greetings-wrapper, .flexbox-container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+*/
+
+.flexbox-container {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.navbar-text {
+
+  margin-left: 1.7vw;
+  margin-top: 3px;
+  color: #011434;
+  font-size: 1rem;
+}
+
+
+
+#github-icon {
+  height: 1.6rem;
+  margin-top: 4px;
+}
+
+#github-icon:hover {
+  filter: invert(56%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(90%) contrast(80%);
+}
+
+#linkedin-icon {
+  height: 1.5rem;
+  margin-bottom: 1.5px;
+  fill: #f7f7f7;
+}
+
+#linkedin-icon:hover {
+  filter: invert(56%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(90%) contrast(80%);
+}
+
+#greetings-wrapper {
+  margin-top: 10vh;
+  width: 40%;
+  color: #011434;
+}
+
+#greetings-heading, .headline {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+#greetings-text {
+  margin-top: 20px;
+  margin-bottom: 10vh;
+  font-size: 1.5rem;
+}
+
+#signature {
+  height: 40px;
+  margin-top: 5px;
+}
+
+.link {
+  text-decoration: underline;
+  font-size: 90%;
+  text-transform: uppercase;
+}
+
+.division-line {
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.content-wrapper-flex {
+  display: flex;
+}
+
+.h1 {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.subject-title {
+  font-style: italic;
+  font-size: 1.6rem;
+  margin-bottom: -10px;
+}
+
+.fineprint, .project-description-fineprint {
+  color: grey;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: -10px;
+}
+
+.supplement-text {
+  width: 50vw;
+  font-size: 1.2rem;
+}
+
+.items {
+  margin-bottom: 3vh;
+}
+
+hr.f {
+  margin-top: 3rem;
+  margin-bottom: 0;
+  border-width: 0;
+  border-top: 1px solid #8a9ca8;
+  text-align: left;
+}
+
+.footer-flex {
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-left: 0;
+  margin-right: 1.2vw;
+  margin-top: 3px;
+}
+
+#footer-text {
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+#github-icon-footer {
+  height: 1.3rem;
+  margin-top: 3.5px;
+}
+
+#github-icon-footer:hover {
+  filter: invert(56%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(90%) contrast(80%);
+}
+
+#linkedin-icon-footer {
+  height: 1.3rem;
+  fill: #f7f7f7;
+}
+
+#linkedin-icon-footer:hover {
+  filter: invert(56%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(90%) contrast(80%);
+}
+
+#signature-footer {
+  height: 30px;
+  margin-top: 7px;
+}
+
+.headline {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.projects-wrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.img-card {
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  height: max-content;
+  min-height: 550px;
+}
+
+
+.img-card-text-wrapper {
+  margin: 20px;
+}
+
+.img-card-image-wrapper {
+  height: 200px;
+  overflow: hidden;
+}
+
+.img-card-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.img-card-item-type {
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+
+.img-card-text-description {
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+}
+
+.image-card-link-wrapper {
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+}
+
+.white-space-footer {
+  height: 15vh;
+}
+
+.project-description-fineprint {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.blog-container {
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-top: 9vh;
+}
+
+.blog-text-wrapper {
+  margin-left: 4.5vw;
+  margin-right: 4.5vw;
+}
+
+.blog-subtitle {
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1.5vh;
+  margin-top: 5vh;
+}
+
+.paragraph {
+  font-size: 1.25rem;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 1vh;
+}
+
+.full-width-picture {
+  width: 100%;
+}
+
+.screely {
+  margin-top: -50px;
+  margin-bottom: -70px;
+  z-index: 1;
+}
+
+.non-screely {
+  margin: 100px;
+}
+
+img {
+  align-self: center;
+}
+
+
+.right-picture {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
+.external-button {
+  padding: 16px 20px;
+  padding-top: 19px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 800;
+  margin-left: 30px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.external-button {
+  background-color: transparent;
+  border: 2px solid #011434;
+}
+
+
+
+.image-w-title-wrapper {
+  position: relative;
+  width: 28.5vw;
+}
+
+.image-w-title {
+  width: 28.5vw;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.horizontal-img-flexbox {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.floating-label {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  padding: 15px 20px 13px;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=style.css.map */
