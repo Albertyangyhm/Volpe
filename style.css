@@ -58,7 +58,7 @@ body {
       font-family:"Canela", sans-serif;
       margin: 0;
       position: absolute;
-      top: 60%;
+      top: 70%;
       left: 49%;
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
@@ -76,7 +76,7 @@ body {
   position: absolute;
   min-height: 50%;
 
-  width: 0%;
+  width: 50%;
   background:rgb(188, 227, 218);
   -webkit-animation: right-to-left-div1 1s forwards;
   animation: right-to-left-div1 1s forwards;
