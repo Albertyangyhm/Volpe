@@ -2,24 +2,25 @@
 
 @font-face {
   font-family: "FontsFree-Net-Lulo-Clean-W01-One-Bold";
-  src: url("FontsFree-Net-Lulo-Clean-W01-One-Bold.ttf.ttf") format("truetype");
+  src: url("FontsFree-Net-Lulo-Clean-W01-One-Bold.ttf") format("truetype");
 }
+
 @font-face {
-  font-display: block;
-  font-family:"Lulo-Clean-W01-One-Bold";
-  src:url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/0163ac22-50a7-406e-aa64-c62ee6fbf3d7.eot?#iefix");
-  src:url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/0163ac22-50a7-406e-aa64-c62ee6fbf3d7.eot?#iefix") format("eot"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/aee74cb3-c913-4b54-9722-6001c92325f2.woff2") format("woff2"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/80de9d5d-ab5f-40ce-911b-104e51e93d7c.woff") format("woff"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/1b46b05b-cfdd-4d82-8c2f-5c6cfba1fe60.ttf") format("truetype"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/be340f0b-a2d4-41df-acb1-4dc124330a88.svg#be340f0b-a2d4-41df-acb1-4dc124330a88") format("svg");
+  font-family: "Canela";
+  src: url("Calena.ttf") format("truetype");
 }
+
 
 
 html {
   background: url('../images/lowres.jpg') no-repeat center center fixed;
-  background-color: rgb(188, 227, 218);
+  background-color: #ffffff;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+
 
 * {
     margin: 0;
@@ -29,30 +30,61 @@ html {
 }
 
 body {
-  font-family:"Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family:"FontsFree-Net-Lulo-Clean-W01-One-Bold", sans-serif;
   font-weight: 300;
     color: #ffffff;
 
-    letter-spacing: +0.05em;
+    letter-spacing: +0em;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
-
     .center {
+      text-shadow:rgba(0, 0, 0, 0.298039) 0px 5px 0px;
       margin: 0;
       position: absolute;
       top: 43%;
-      left: 50%;
+      left: 52%;
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-      font-size: 100px;
-      letter-spacing: +0.1em;
+      font-size: 131px;
+      letter-spacing: +0em;
     }
     .center0 {
+      font-family:"Canela", sans-serif;
       margin: 0;
       position: absolute;
-      top: 53%;
-      left: 50%;
+      top: 60%;
+      left: 49%;
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-      font-size: 50px;
+      font-size: 46px;
+      letter-spacing: +0.1em;
     }
+
+    .rectangle {
+      height : 50%;
+  width: 100%;
+  background-color: rgb(188, 227, 218);
+}/* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+
+.move {
+  position: absolute;
+  min-height: 50%;
+  width: 0%;
+  background:rgb(188, 227, 218);
+  -webkit-animation: right-to-left-div1 1s forwards;
+  animation: right-to-left-div1 1s forwards;
+}
+
+
+
+
+@keyframes right-to-left-div1{
+  to {
+    width: 100%;
+  }
+}
