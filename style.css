@@ -30,7 +30,7 @@ html {
 }
 
 body {
-  font-family:"FontsFree-Net-Lulo-Clean-W01-One-Bold", sans-serif;
+
   font-weight: 300;
     color: #ffffff;
 
@@ -43,6 +43,7 @@ body {
 }
 
     .center {
+      font-family:"FontsFree-Net-Lulo-Clean-W01-One-Bold", sans-serif;
       text-shadow:rgba(0, 0, 0, 0.298039) 0px 5px 0px;
       margin: 0;
       position: absolute;
@@ -81,6 +82,7 @@ body {
   animation: right-to-left-div1 1s forwards;
 }
 a {
+  font-family:"FontsFree-Net-Lulo-Clean-W01-One-Bold", sans-serif;
   position: absolute;
   top: 80%;
   left: 49%;
