@@ -23,7 +23,7 @@
 
 html {
   background: url('../images/lowres.jpg') no-repeat center center fixed;
-  background-color: #ffffff;
+  background-color: rgb(188, 227, 218);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -52,12 +52,12 @@ body {
 }
 
     .center {
-      font-family:"Canela","FontsFree-Net-Lulo-Clean-W01-One-Bold", sans-serif;
+      font-family:"Canela", sans-serif;
       text-shadow:rgba(0, 0, 0, 0.298039) 0px 3px 0px;
       margin: 0;
       position: absolute;
       top: 43%;
-      left: 52%;
+      left: 50%;
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       font-size: 131px;
@@ -70,7 +70,7 @@ body {
       margin: 0;
       position: absolute;
       top: 70%;
-      left: 49%;
+      left: 50%;
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       font-size: 46px;
@@ -88,7 +88,7 @@ body {
   min-height: 50%;
 
   width: 50%;
-  background:rgb(188, 227, 218);
+  background:#ffffff;
   -webkit-animation: right-to-left-div1 1s forwards;
   animation: right-to-left-div1 1s forwards;
 }
