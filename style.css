@@ -74,10 +74,30 @@ body {
 .move {
   position: absolute;
   min-height: 50%;
+
   width: 0%;
   background:rgb(188, 227, 218);
   -webkit-animation: right-to-left-div1 1s forwards;
   animation: right-to-left-div1 1s forwards;
+}
+a {
+  position: absolute;
+  top: 80%;
+  left: 49%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+    background: #111;
+    color: #fff;
+    opacity: 0.7;
+}
+
+a:hover {
+  opacity: 1;
+    background: rgb(12, 60, 96);
+    color: #fff;
 }
 
 
