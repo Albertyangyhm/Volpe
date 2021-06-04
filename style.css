@@ -4,11 +4,20 @@
   font-family: "FontsFree-Net-Lulo-Clean-W01-One-Bold";
   src: url("FontsFree-Net-Lulo-Clean-W01-One-Bold.ttf") format("truetype");
 }
+/*
+
 
 @font-face {
   font-family: "Canela", sans-serif;
-  src: url("Calena.ttf") format("truetype");
+  src: url("Calena.ttc") format("truetype");
 }
+*/
+@font-face {
+  font-family: "HelveticaNeue Light", sans-serif;
+  src: url("HelveticaNeue Light.ttf") format("truetype");
+}
+
+@font-face {font-family: "Canela"; src: url("//db.onlinewebfonts.com/t/3def92f7b2ad644bd382798ecc8ca4c7.eot"); src: url("//db.onlinewebfonts.com/t/3def92f7b2ad644bd382798ecc8ca4c7.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3def92f7b2ad644bd382798ecc8ca4c7.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3def92f7b2ad644bd382798ecc8ca4c7.woff") format("woff"), url("//db.onlinewebfonts.com/t/3def92f7b2ad644bd382798ecc8ca4c7.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3def92f7b2ad644bd382798ecc8ca4c7.svg#Canela") format("svg"); }
 
 
 
@@ -43,8 +52,8 @@ body {
 }
 
     .center {
-      font-family:"FontsFree-Net-Lulo-Clean-W01-One-Bold", sans-serif;
-      text-shadow:rgba(0, 0, 0, 0.298039) 0px 5px 0px;
+      font-family:"Canela","FontsFree-Net-Lulo-Clean-W01-One-Bold", sans-serif;
+      text-shadow:rgba(0, 0, 0, 0.298039) 0px 3px 0px;
       margin: 0;
       position: absolute;
       top: 43%;
@@ -52,12 +61,12 @@ body {
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       font-size: 131px;
-      letter-spacing: +0em;
+      letter-spacing: +0.05em;
     }
     .center0 {
       white-space: nowrap;
   overflow: hidden;
-      font-family:"Canela", sans-serif;
+      font-family:"HelveticaNeue Light","Canela", sans-serif;
       margin: 0;
       position: absolute;
       top: 70%;
@@ -113,106 +122,122 @@ a:hover {
   }
 }
 
-.form-style-5{
-	max-width: 500px;
-	padding: 10px 20px;
-	background: #f4f7f8;
-	margin: 10px auto;
-	padding: 20px;
-	background: #f4f7f8;
-	border-radius: 8px;
-	font-family: "FontsFree-Net-Lulo-Clean-W01-One-Bold", Georgia, "Times New Roman", Times, serif;
-}
-.form-style-5 fieldset{
-	border: none;
-}
-.form-style-5 legend {
-	font-size: 1.4em;
-	margin-bottom: 10px;
-}
-.form-style-5 label {
-	display: block;
-	margin-bottom: 8px;
-}
-.form-style-5 input[type="text"],
-.form-style-5 input[type="date"],
-.form-style-5 input[type="datetime"],
-.form-style-5 input[type="email"],
-.form-style-5 input[type="number"],
-.form-style-5 input[type="search"],
-.form-style-5 input[type="time"],
-.form-style-5 input[type="url"],
-.form-style-5 textarea,
-.form-style-5 select {
-	font-family: "Canela", Georgia, "Times New Roman", Times, serif;
-	background: rgba(255,255,255,.1);
-	border: none;
-	border-radius: 4px;
-	font-size: 15px;
-	margin: 0;
-	outline: 0;
-	padding: 10px;
-	width: 100%;
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	background-color: #e8eeef;
-	color:#8a97a0;
-	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-	margin-bottom: 30px;
-}
-.form-style-5 input[type="text"]:focus,
-.form-style-5 input[type="date"]:focus,
-.form-style-5 input[type="datetime"]:focus,
-.form-style-5 input[type="email"]:focus,
-.form-style-5 input[type="number"]:focus,
-.form-style-5 input[type="search"]:focus,
-.form-style-5 input[type="time"]:focus,
-.form-style-5 input[type="url"]:focus,
-.form-style-5 textarea:focus,
-.form-style-5 select:focus{
-	background: #d2d9dd;
-}
-.form-style-5 select{
-	-webkit-appearance: menulist-button;
-	height:35px;
-}
-.form-style-5 .number {
-	background: #1abc9c;
-	color: #fff;
-	height: 30px;
-	width: 30px;
-	display: inline-block;
-	font-size: 0.8em;
-	margin-right: 4px;
-	line-height: 30px;
-	text-align: center;
-	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
-	border-radius: 15px 15px 15px 0px;
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.form-style-5 input[type="submit"],
-.form-style-5 input[type="button"]
-{
-	position: relative;
-	display: block;
-	padding: 19px 39px 18px 39px;
-	color: #FFF;
-	margin: 0 auto;
-	background: #1abc9c;
-	font-size: 18px;
-	text-align: center;
-	font-style: normal;
-	width: 100%;
-	border: 1px solid #16a085;
-	border-width: 1px 1px 3px;
-	margin-bottom: 10px;
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #384047;
 }
-.form-style-5 input[type="submit"]:hover,
-.form-style-5 input[type="button"]:hover
-{
-	background: #109177;
+
+form {
+  max-width: 70%;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  form {
+    max-width: 700px;
+  }
 }
 
 
