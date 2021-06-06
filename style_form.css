@@ -8,16 +8,24 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-.move {
-  position: absolute;
-  min-height: 50%;
 
-  width: 50%;
-  background:#ffffff;
-  -webkit-animation: right-to-left-div1 1s forwards;
-  animation: right-to-left-div1 1s forwards;
+
+.container {
+  font-size: 30px;
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
 }
-
+img{
+  width: 100%;
+    border-radius:8px;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
 .flexbox{
   font-family:"Canela", sans-serif;
   position: absolute;
@@ -38,7 +46,7 @@ form {
   margin: 10px auto;
   padding: 10px 20px;
   background: #f4f7f8;
-  border-radius: 8px;
+  border-radius:8px;
 }
 
 h1 {
@@ -87,12 +95,12 @@ button {
   font-family:"Canela", sans-serif;
   padding: 19px 39px 18px 39px;
   color: #FFF;
-  background-color: rgb(188, 227, 218);
+  background-color: rgb(239, 147, 83);
   font-size: 18px;
   text-align: center;
   border-radius: 5px;
   width: 100%;
-  border: 1px solid rgb(188, 227, 218);
+  border: 1px solid rgb(239, 147, 83);
   border-width: 1px 1px 3px;
   box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
   margin-bottom: 10px;
