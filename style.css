@@ -57,13 +57,13 @@ body {
       left: 50%;
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-      font-size: 131px;
+      font-size: 150px;
       letter-spacing: +0.05em;
     }
     .center0 {
       white-space: nowrap;
   overflow: hidden;
-      font-family: "Canela0", sans-serif;
+      font-family: "Canela", sans-serif;
       margin: 0;
       position: absolute;
       top: 70%;
