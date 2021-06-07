@@ -118,3 +118,18 @@ a:hover {
     width: 95%;
   }
 }
+
+@media screen and (max-width: 800px) {
+.center {
+  top: 35%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+}
+
+.center0 {
+  top: 62%;
+  font-size: 30px;
+}
+}

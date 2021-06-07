@@ -161,21 +161,13 @@ label.light {
 
 
 @media screen and (max-width: 800px) {
-  .center {
 
-    font-size: 60px;
-
-  }
-
-  .center0 {
-top: 60%;
-    font-size: 30px;
-
-  }
 
   form {
     max-width: 480px;
+
   }
-
-
+  .container {
+    font-size: 20px;
+}
 }
