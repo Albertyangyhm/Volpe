@@ -1,6 +1,9 @@
 @font-face {font-family: "Canela"; src: url("//db.onlinewebfonts.com/t/3def92f7b2ad644bd382798ecc8ca4c7.eot"); src: url("//db.onlinewebfonts.com/t/3def92f7b2ad644bd382798ecc8ca4c7.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3def92f7b2ad644bd382798ecc8ca4c7.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3def92f7b2ad644bd382798ecc8ca4c7.woff") format("woff"), url("//db.onlinewebfonts.com/t/3def92f7b2ad644bd382798ecc8ca4c7.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3def92f7b2ad644bd382798ecc8ca4c7.svg#Canela") format("svg"); }
 
 
+@font-face {font-family: "Canela0"; src: url("//db.onlinewebfonts.com/t/4a24899e94d8236f671c1090cd9e068c.eot"); src: url("//db.onlinewebfonts.com/t/4a24899e94d8236f671c1090cd9e068c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4a24899e94d8236f671c1090cd9e068c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4a24899e94d8236f671c1090cd9e068c.woff") format("woff"), url("//db.onlinewebfonts.com/t/4a24899e94d8236f671c1090cd9e068c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4a24899e94d8236f671c1090cd9e068c.svg#Canela") format("svg"); }
+
+
 *,
 *:before,
 *:after {
@@ -36,8 +39,12 @@ img{
   right: 0%;
   top: 0%;
 }
+input{
+font-family:"Canela0", sans-serif;
+
+}
 option{
-    font-family:"Canela", sans-serif;
+    font-family:"Canela0", sans-serif;
 }
 body {
 
@@ -80,7 +87,7 @@ input[type="time"],
 input[type="url"],
 textarea,
 select {
-  font-family:"Canela", sans-serif;
+  font-family:"Canela0", sans-serif;
   background: rgba(255, 255, 255, 0.1);
   border: none;
   font-size: 16px;
